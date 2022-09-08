@@ -1,0 +1,45 @@
+body{
+    background: rgb(218, 150, 125);
+}
+
+.title{    
+    width: 200px;
+    margin: 21px -1px 0px 420px;
+    height: 32px;
+    padding: 10px;
+}
+
+.numbers-field{
+    width: 150px;
+    margin: 20px 0px 0px 120px;
+}
+
+.btninsert{
+    margin: 14px 0px 0px 120px;
+}
+
+.display-results{
+    float: right;
+    border: 2px solid red;
+    width: 741px;
+    margin: -86px 183px 0px 0px;
+    padding: 25px;
+    font-size: 39px;
+    text-align: center;
+}
+.spn-numbers{
+    margin-right: 20px;
+}
+
+.minustomax{
+    position: absolute;
+    margin: 108px 0px 0px 0px;
+    display: none;
+    
+}
+
+.maxtominus{
+    position: absolute;
+    margin: 69px 0px 0px 0px;
+    display: none;
+}
