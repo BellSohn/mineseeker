@@ -16,8 +16,7 @@ body{
     margin: -6px 0px 10px 0px;
 }
 
-.div-reloj{
-    /*border: 1px solid;*/
+.div-reloj{    
     width: 80px;
     height: 31px;
     text-align: center;
@@ -44,8 +43,7 @@ body{
     background: green;
 }
 
-.div-puntuacion{
-    /*border: 2px solid darkgray;*/
+.div-puntuacion{    
     width: 120px;
     height: 40px;
     float: right;
