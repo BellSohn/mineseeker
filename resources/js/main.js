@@ -1,18 +1,15 @@
 $(document).ready(function(){
 
-    var numbers = [];
-    //var copyNumbers = [];
+    var numbers = [];    
     var arrLength = 0;
     
 $('.btninsert').on('click',function(){
-    //console.log('epale!!');
+    
     var number = parseInt($('.numbers-field').val());
     numbers.push(number);
-    arrLength = numbers.length;
-    console.log(numbers);
-    //console.log(arrLength);
+    arrLength = numbers.length;   
     $('.numbers-field').val("");
-    //console.log(arrLength);
+    
     $('.display-results').append("<span class='spn-numbers'>"+numbers[arrLength-1]+"</span>")
     if(numbers.length == 5){
         $(this).prop('disabled',true);
@@ -23,11 +20,10 @@ $('.btninsert').on('click',function(){
 
 
     $('.minustomax').on('click',function(){
-           //numbers = [45,2,3,14,11];
+           
       let copyNumbers = numbers;
         $('.spn-numbers').text("");
-        numbers = "";
-        //arrLength = numbers.length;
+        numbers = "";        
         arrLength = copyNumbers.length;
         var aux = 0;
         for(let i = 0;i<arrLength-1;i++){
@@ -38,14 +34,13 @@ $('.btninsert').on('click',function(){
                     copyNumbers[j+1] = aux;
                 }
             }
-        }
-        //console.log(numbers);
+        }        
         $('.display-results').append("<span class='spn-numbers'>"+copyNumbers+"</span>")
       
     });
 
     $('.maxtominus').on('click',function(){
-          //numbers = [45,2,3,14,11];
+          
         let copyNumbers = numbers;
         $('.spn-numbers').text("");
         numbers = "";
