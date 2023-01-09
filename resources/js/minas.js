@@ -1,5 +1,4 @@
-$(document).ready(function(){
-    //alert('las minas!');
+$(document).ready(function(){   
 
     var n = 0;
     var minute = 0;
@@ -52,8 +51,7 @@ window.setInterval(function(){
 
  var cols = document.querySelectorAll('td'); 
 
-    for(var i = 0;i<cols.length;i++){
-        console.log(cols[i]);
+    for(var i = 0;i<cols.length;i++){        
         if(i <= 10 ){
             tdvalue = random(1,5);
         }else if( i> 10 && i<=20){
@@ -72,8 +70,7 @@ window.setInterval(function(){
    }   
    
     $('#a13').click(function(){        
-        var sqr_val = $(this).attr('value');
-        console.log(sqr_val);
+        var sqr_val = $(this).attr('value');        
         $(this).css('background','green');
         $(this).css('border','2px yellow');
     });
